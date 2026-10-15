@@ -38,6 +38,7 @@ def fruit_pricing(): #python dictionary methods with pairs of fruits and prices
     fruits["pear"] = 1.15
     print(fruits.get("peach"))
 
+    #loop will print out each fruit that is at least $1.25
     for fruit in fruits:
         if fruits[fruit]>= 1.25:
             print(fruit)
