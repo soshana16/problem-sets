@@ -4,18 +4,18 @@ def main():
     blastoff()
     candy_shop()
 
-def blue():
+def blue(): #prints 36
     red = 3
     purple = red*12
     print(purple)
 
-def blastoff():
+def blastoff(): #loops through 3, 2, 1 blastoff!
     count = int(input("Enter a number: "))
     for i in range(count, 0, -1):
         print (i)
         print ("blastoff!")
 
-def candy_shop():
+def candy_shop(): #manages a list of candies and practices using list methods
     candies = ["m&m", "milkyway", "hershey"]
     candies.append("kitkat")
     candies.insert(1, "starburts")
@@ -28,12 +28,12 @@ def candy_shop():
     all_candies = candies + user_candies
     print(len(all_candies))
     
-    for candy in all_candies:
+    for candy in all_candies: #prints the total cost
         print(candy)
     total_cost = len(all_candies) * 1.25
     return total_cost
 
-def fruit_pricing():
+def fruit_pricing(): #python dictionary methods with pairs of fruits and prices
     fruits = {"apple": 0.75, "banana": 1.25, "orange": 0.80, "peach": 2.25, "coconut": 2.80}
     fruits["pear"] = 1.15
     print(fruits.get("peach"))
